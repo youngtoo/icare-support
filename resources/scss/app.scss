@@ -1,0 +1,38 @@
+// Variables
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
+
+// Colors
+$brand-color: #ff0215;
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+#main-content{
+    background-color: white;
+    min-height: 90vh;
+}
+
+/* Sidebar Navigation */
+.nav-link {
+    color: #444;
+    font-weight: 200;
+}
+
+/* Widget Section */
+.widget-section {
+    min-height: 100px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    p {
+        color: #333;
+    }
+}
+
+.feather{
+    height: 0.9rem;
+    width: 0.9rem;
+}
