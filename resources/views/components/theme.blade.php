@@ -50,7 +50,7 @@
                     <div id="main-content" class="col-sm-10">
 
                         <!-- Page Title -->
-                    <h4 class="my-4 p-2">{{ $pageTitle }}</h4>
+                    <h4 class="mt-4 mb-2 p-2">{{ $pageTitle }}</h4>
                     <div class="notification-area"></div>
                         
                         {{ $slot }}
