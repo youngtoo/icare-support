@@ -6,7 +6,7 @@ An application for support.
 2. User Management
 3. Ticket Management
 4. Service Level Management
-
+5. Data Management
 ## Installation
 This is a laravel application. You would need to set up your own database and own configuration files.
 

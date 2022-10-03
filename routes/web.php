@@ -41,3 +41,19 @@ Route::get('/reports', function(){
     Log::info("Reports page visited.");
     return view('reports');
 })->name('reports');
+
+
+/**
+ * Ticket Route
+ */
+
+Route::prefix('ticket')->group(function () {
+
+    Route::name('ticket.')->group(function(){
+        Route::get('/new', function () {
+            // Matches The "/ticket/new" URL
+            return view('tickets.new-ticket');
+        })->name('new');
+    });
+    
+});

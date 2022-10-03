@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="col-auto">
-                    <input type="button" class="btn btn-sm btn-outline-dark" value="New Issue">
+                    <a href="{{ route('ticket.new')}}" class="btn btn-sm btn-outline-dark">New Ticket</a>
                 </div>
                 
     
