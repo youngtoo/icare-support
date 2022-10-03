@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Settings;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,10 +28,7 @@ Route::get('/tickets', function(){
     return view('tickets');
 })->name('tickets');
 
-Route::get('/settings', function(){
-    Log::info("Settings page visited.");
-    return view('settings');
-})->name('settings');
+Route::get('/settings', [Settings::class, 'show'])->name('settings');
 
 Route::get('/system', function(){
     Log::info("System page visited.");

@@ -6,6 +6,8 @@
 
         <title>{{ config('app.name')}} | Home</title>
 
+        @livewireStyles
+
         <link rel="stylesheet" href="{{ asset("assets/css/bootstrap.css")}}">
         @vite(['resources/js/app.js' ,'resources/scss/app.scss'])
 
@@ -84,5 +86,7 @@
             })
             }
         </script>
+
+        @livewireScripts
     </body>
 </html>

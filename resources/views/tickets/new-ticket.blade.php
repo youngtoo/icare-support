@@ -15,6 +15,9 @@
             <div class="mb-3">
                 <h5>Issue Category</h5>
 
+
+               
+
                 <div class="row gx-3 gy-2 align-items-center">
                     <div class="col-sm-3">
                         <label class="visually-hidden" for="specificSizeInputName">Name</label>
@@ -45,6 +48,6 @@
     </div>
 
     <div>
-        
+        <livewire:counter />
     </div>
 </x-theme>
