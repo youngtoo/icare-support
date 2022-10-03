@@ -36,3 +36,8 @@ Route::get('/system', function(){
     Log::info("System page visited.");
     return view('system');
 })->name('system');
+
+Route::get('/reports', function(){
+    Log::info("Reports page visited.");
+    return view('reports');
+})->name('reports');
