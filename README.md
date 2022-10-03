@@ -1,2 +1,2 @@
 ### iCare Support
-p An application for support.
+An application for support.
