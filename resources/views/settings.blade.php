@@ -27,8 +27,22 @@
         <p>This widget should be able to show ticket statuses.</p>
         <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Go To Tickets</button>
     </div>
-    @endif
+
+    @elseif($option === 'tickets')
+
+    <div class="widget-section p-3 bg-light rounded">
+        <h5>Manage Tickets</h5>
+        <p>Manage Ticket Statuses</p>
+        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Go To Tickets</button>
+    </div>
+
+    @elseif($option === 'team')
+
+    <x-settings.issue.team></x-settings.issue.team>
+
        
+   @endif
+
    @endif
 
 </x-theme>
