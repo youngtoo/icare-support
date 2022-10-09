@@ -14,14 +14,14 @@
 
 
     </head>
-    <body>
+    <body class="bg-light-blue" style="height: 100%">
 
         <!-- As a heading -->
         <x-nav/>
 
 
         <!-- Application -->
-        <div id="icare-application" class="container px-2">
+        <div id="icare-application" class="container px-2 h-100">
 
             <!-- 
                 The page should be able to show the following sections
@@ -40,7 +40,7 @@
             <!-- Page footer -->
 
 
-            <main class="">
+            <main class="h-100">
                
                     <!-- Sidebar -->
                     
@@ -50,8 +50,6 @@
                     <div id="main-content">
 
                         <!-- Page Title -->
-                    <h4 class="mt-4 mb-2 p-2">{{ $pageTitle }}</h4>
-                    <div class="notification-area"></div>
                         
                         {{ $slot }}
 

@@ -4,6 +4,23 @@
         Dashboard
     </x-slot>
 
+    <div>
+        <p>Quickly create a new ticket.</p>
+        <form action="/ticket/new">
+            @csrf
+        <div class="hstack gap-3">
+            
+            <input class="form-control me-auto" type="text" placeholder="What's the issue?" aria-label="Add your item here...">
+            <div class="vr"></div>
+            <button type="submit" class="btn btn-secondary">Create</button>
+            
+            
+        
+        </div>
+        </form>
+    </div>
+      
+
 @isset($general_statuses)
 <div class="widget-section p-3 bg-light rouded">
     <p>General Statuses</hp>
