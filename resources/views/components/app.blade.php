@@ -40,26 +40,16 @@
             <!-- Page footer -->
 
 
-            <main class="row gx-5">
+            <main class="">
                
                     <!-- Sidebar -->
                     
-                    <div id="sidebar" class="col-sm-2">
-                        <x-sidenav/>
-                    </div>
+                  
 
                     <!-- Content -->
-                    <div id="main-content" class="col-sm-10">
+                    <div id="main-content">
 
                         <!-- Page Title -->
-
-                    @auth
-                        <p>The user is authenticated</p>
-                    @endauth
-                     
-                    @guest
-                        <p>The user is not authenticated</p>
-                    @endguest
                     <h4 class="mt-4 mb-2 p-2">{{ $pageTitle }}</h4>
                     <div class="notification-area"></div>
                         

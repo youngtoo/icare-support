@@ -4,6 +4,11 @@
     <a class="nav-link" href="{{ route('reports')}}"><i data-feather="terminal"></i> Reports</a>
     <a class="nav-link" href=" {{ route('settings')}}"><i data-feather="settings"></i> Settings</a>
     <a class="nav-link" href="{{ route('system')}}"><i data-feather="terminal"></i> System</a>
-    
-    <a class="nav-link" href="#"><i data-feather="log-out"></i> Logout</a>
+    @auth
+    <a class="nav-link" href="/logout"><i data-feather="log-out"></i> Logout</a>
+    @endauth
+
+    @guest
+    <a class="nav-link" href="/login"><i data-feather="log-in"></i> Login</a>
+    @endguest
 </nav>
