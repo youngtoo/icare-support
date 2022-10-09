@@ -4,6 +4,15 @@
         Dashboard
     </x-slot>
 
+@isset($general_statuses)
+<div class="widget-section p-3 bg-light rouded">
+    <p>General Statuses</hp>
+    <p class="h3">
+        {{ $general_statuses->count()}}
+    </p>
+</div>
+@endisset
+
 <div class="widget-section p-3 bg-light rounded">
     <h5>Summary</h5>
     <p>This widget should be able to show ticket statuses.</p>

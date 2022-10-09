@@ -12,5 +12,6 @@ class GeneralStatus extends Model
     // Make sure that the table name is correct
     protected $table = 'general_statuses';
 
+    protected $primaryKey = 'gs_id';
     
 }

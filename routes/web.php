@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Settings;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +17,7 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 
-Route::get('/', function () {
-    
-    Log::debug("The index page /, returns the welcome blade file. Named as 'home' Route");
-    Log:info("Returning the welcome blade resource file.");
-    return view('welcome');
-})->name('home')->middleware('auth');
-
-
+Route::get('/', [DashboardController::class,'index'])->name('home')->middleware('auth');
 
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'authenticate']);

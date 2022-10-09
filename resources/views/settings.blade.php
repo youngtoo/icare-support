@@ -2,47 +2,71 @@
 
     <x-slot:pageTitle>Settings</x-slot>
 
-   @if (!isset($option))
+    <div>
+        <ul class="nav nav-tabs" id="settingsTab" role="tablist">
 
-    <!-- Ticket Statuses -->
-    <div class="widget-section p-3 bg-light rounded">
-        <h5>Tickets</h5>
-        <p>This widget should be able to show ticket statuses.</p>
-        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Go To Tickets</button>
+            <!-- General Tab Button -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active"
+                        id="general-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#general-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="general-tab-pane"
+                        aria-selected="true">
+                        General
+                </button>
+            </li>
+            <!-- ./End-->
+
+
+            <!-- Team Tab Button -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="team-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#team-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="team-tab-pane"
+                        aria-selected="true">
+                        Team
+                </button>
+            </li>
+            <!-- ./End-->
+        </ul>
+
+        <div class="tab-content" id="settingsTabContent">
+            
+            <!--  General Tab Content -->
+            <div class="tab-pane fade show active" 
+                    id="general-tab-pane" 
+                    role="tabpanel" 
+                    ria-labelledby="home-tab" 
+                    tabindex="0">
+
+                    <div class="mt-3 p-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque aliquid ipsum? Provident, laudantium eos exercitationem voluptatibus quae veritatis fugiat architecto praesentium voluptatem a, ea aliquid dolores officia magnam cupiditate!</p>
+                    </div>
+            </div>
+            <!-- ./End -->
+
+            <!--  Team Tab Content -->
+            <div class="tab-pane fade" 
+                    id="team-tab-pane" 
+                    role="tabpanel" 
+                    aria-labelledby="team-tab" 
+                    tabindex="0">
+
+                    <div class="mt-3 p-2">
+                        <h6>Team</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque aliquid ipsum? Provident, laudantium eos exercitationem voluptatibus quae veritatis fugiat architecto praesentium voluptatem a, ea aliquid dolores officia magnam cupiditate!</p>
+                    </div>
+            </div>
+            <!-- ./End -->
+
+        </div>
     </div>
-
-    <div class="widget-section p-3 bg-light rounded">
-        <h5>Ticket Components</h5>
-        <p>This allows you to manage system components</p>
-        <form action="/settings" method="GET">
-            <input type="hidden" name="option" value="components">
-            <input type="submit" class="btn btn-sm btn-outline-dark" value="Ticket Components"></form>
-    </div>
-       
-   @else
-
-    @if ($option === 'components')
-    <div class="widget-section p-3 bg-light rounded">
-        <h5>Manage Your Components</h5>
-        <p>This widget should be able to show ticket statuses.</p>
-        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Go To Tickets</button>
-    </div>
-
-    @elseif($option === 'tickets')
-
-    <div class="widget-section p-3 bg-light rounded">
-        <h5>Manage Tickets</h5>
-        <p>Manage Ticket Statuses</p>
-        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Go To Tickets</button>
-    </div>
-
-    @elseif($option === 'team')
-
-    <x-settings.issue.team></x-settings.issue.team>
-
-       
-   @endif
-
-   @endif
 
 </x-theme>

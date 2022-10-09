@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Ian Too',
             'email' => 'ianktoo@gmail.com',
             'password' => Hash::make('P@ssw0rd5'),
+            'created_at' => now(),
+
         ]);
 
 
@@ -34,6 +36,13 @@ class DatabaseSeeder extends Seeder
             'name' => 'Administrator',
             'email' => 'info@iantoo.co.ke',
             'password' => Hash::make('P@ssw0rd5'),
+            'created_at' => now(),
+        ]);
+
+
+        $this->call([
+            GeneralStatusesSeeder::class,
+            StaffSeeder::class,
         ]);
     }
 }
