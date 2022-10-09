@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Settings;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DepartmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,14 @@ Route::prefix('ticket')->middleware('auth')->group(function () {
             // Matches The "/ticket/new" URL
             return view('tickets.new-ticket');
         })->name('new');
+    });
+    
+});
+
+Route::prefix('settings')->middleware('auth')->group(function () {
+
+    Route::name('settings.')->group(function(){
+        Route::get('/department', [DepartmentController::class, 'index'])->name('department');
     });
     
 });

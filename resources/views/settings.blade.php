@@ -35,6 +35,24 @@
                 </button>
             </li>
             <!-- ./End-->
+
+
+            <!-- Team Tab Button -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="department-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#department-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="department-tab-pane"
+                        aria-selected="true">
+                        Department
+                </button>
+            </li>
+            <!-- ./End-->
+
+            
         </ul>
 
         <div class="tab-content" id="settingsTabContent">
@@ -62,6 +80,21 @@
                     <div class="mt-3 p-2">
                         <h6>Team</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum itaque aliquid ipsum? Provident, laudantium eos exercitationem voluptatibus quae veritatis fugiat architecto praesentium voluptatem a, ea aliquid dolores officia magnam cupiditate!</p>
+                    </div>
+            </div>
+            <!-- ./End -->
+
+
+            <!--  Department Tab Content -->
+            <div class="tab-pane fade" 
+                    id="department-tab-pane" 
+                    role="tabpanel" 
+                    aria-labelledby="department-tab" 
+                    tabindex="0">
+
+                    <div class="mt-3 p-2">
+                        <h6>Deparment</h6>
+                        
                     </div>
             </div>
             <!-- ./End -->
