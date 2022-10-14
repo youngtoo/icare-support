@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('team_id')->nullable($value = true);
-            $table->unsignedBigInteger('sla_id')->nullable($value = true);
+            //$table->unsignedBigInteger('sla_id')->nullable($value = true);
             $table->unsignedBigInteger('status_id')->nullable($value = true);
             $table->unsignedBigInteger('staff_id')->nullable($value = true);
             $table->unsignedBigInteger('assigned_id')->nullable($value = true);
@@ -30,7 +30,7 @@ return new class extends Migration
             $table->softDeletes($column = 'deleted_at', $precision = 0);
             $table->timestamps();
             
-            $table->foreign('sla_id')->references('id')->on('s_l_a_s');
+            //$table->foreign('sla_id')->references('id')->on('s_l_a_s');
             $table->foreign('status_id')->references('id')->on('issue_statuses');
             $table->foreign('team_id')->references('id')->on('teams');
             $table->foreign('category_id')->references('id')->on('categories');
