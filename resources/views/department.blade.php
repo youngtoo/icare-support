@@ -5,10 +5,16 @@
         <!-- Ticket Statuses -->
     <div class="ticket-widget-section">
 
-        @isset($departments)
-            We have departments
+        @isset($d)
+            <p>D is set</p>
+            @foreach ($d as $department)
+                <p>{{ $department->department }}</p>
+            @endforeach
         @endisset
 
+        @isset($hello)
+            <p>Hello isset</p>
+        @endisset
 
         <div class="table-responsive">
             <table class="table table-hover">
@@ -16,8 +22,7 @@
                 <thead class="table-light">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Issue</th>
-                        <th scope="col">Staff</th>
+                        <th scope="col">Department</th>
                         <th scope="col">Status</th>
                         <th scope="col">Created</th>
                         <th scope="col">Action</th>
