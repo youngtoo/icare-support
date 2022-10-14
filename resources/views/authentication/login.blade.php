@@ -10,17 +10,17 @@
                 <span class="small">User Login</span>
             </div>
             <div class="mb-3">
-            <input type="email" name="email" class="form-control form-control-sm" placeholder="Email" id="useremail">
+            <input type="email" name="email" class="form-control form-control" placeholder="Email" id="useremail">
 
             @error('email')
-                <div class="form-text text-danger">{{ $message }}</div>
+                <div class="form-text text-danger small">{{ $message }}</div>
             @enderror
             </div>
             <div class="mb-3">
                
-                <input type="password" name="password"  class="form-control form-control-sm" placeholder="Password"  id="userpassword">
+                <input type="password" name="password"  class="form-control form-control" placeholder="Password"  id="userpassword">
                 @error('password')
-                <div class="form-text text-danger">{{ $message }}</div>
+                <div class="form-text text-danger small">{{ $message }}</div>
                 @enderror
             </div>
                 

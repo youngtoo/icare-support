@@ -45,6 +45,9 @@ class DatabaseSeeder extends Seeder
             StaffSeeder::class,
             SLASeeder::class,
             DepartmentSeeder::class,
+            PermissionsTableSeeder::class,
+            RolesTableSeeder::class,
+            ConnectRelationshipsSeeder::class,
         ]);
     }
 }

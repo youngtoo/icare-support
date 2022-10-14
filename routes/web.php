@@ -6,6 +6,7 @@ use App\Http\Controllers\Settings;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\RoleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,4 +65,8 @@ Route::prefix('settings')->middleware('auth')->group(function () {
         Route::get('/department', [DepartmentController::class, 'index'])->name('department');
     });
     
+
+    Route::name('settings.')->group(function() {
+        Route::get('/roles', [RoleController::class, 'index'])->name('roles');
+    });
 });

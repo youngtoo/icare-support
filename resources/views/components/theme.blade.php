@@ -54,11 +54,11 @@
                         <!-- Page Title -->
 
                     @auth
-                        <p>The user is authenticated</p>
+                        <x-notify type="success" message="You're authenticated!"/>
                     @endauth
                      
                     @guest
-                        <p>The user is not authenticated</p>
+                        <x-notify type="warning" message="You are not authenticated!"/>
                     @endguest
                     <h4 class="mt-4 mb-2 p-2">{{ $pageTitle }}</h4>
                     <div class="notification-area"></div>

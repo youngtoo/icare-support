@@ -24,12 +24,13 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        '17d016dc52a631c1e74d2eb8fdd57342' => __DIR__ . '/..' . '/laravel/helpers/src/helpers.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
@@ -40,6 +41,10 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'j' => 
+        array (
+            'jeremykenedy\\LaravelRoles\\' => 26,
         ),
         'W' => 
         array (
@@ -83,6 +88,7 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
             'Spatie\\Ignition\\' => 16,
             'Spatie\\FlareClient\\' => 19,
             'Spatie\\Backtrace\\' => 17,
+            'Seedster\\' => 9,
         ),
         'R' => 
         array (
@@ -178,6 +184,10 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'jeremykenedy\\LaravelRoles\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src',
         ),
         'Whoops\\' => 
         array (
@@ -314,6 +324,10 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'Spatie\\Backtrace\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/backtrace/src',
+        ),
+        'Seedster\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/eklundkristoffer/seedster/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -545,6 +559,7 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'App\\Http\\Controllers\\SettingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/SettingsController.php',
         'App\\Http\\Controllers\\StaffController' => __DIR__ . '/../..' . '/app/Http/Controllers/StaffController.php',
         'App\\Http\\Controllers\\TeamController' => __DIR__ . '/../..' . '/app/Http/Controllers/TeamController.php',
+        'App\\Http\\Controllers\\TicketAttachmentController' => __DIR__ . '/../..' . '/app/Http/Controllers/TicketAttachmentController.php',
         'App\\Http\\Controllers\\TicketController' => __DIR__ . '/../..' . '/app/Http/Controllers/TicketController.php',
         'App\\Http\\Controllers\\TicketSourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/TicketSourceController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -703,16 +718,21 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\CategorySeeder' => __DIR__ . '/../..' . '/database/seeders/CategorySeeder.php',
         'Database\\Seeders\\ComponentSeeder' => __DIR__ . '/../..' . '/database/seeders/ComponentSeeder.php',
+        'Database\\Seeders\\ConnectRelationshipsSeeder' => __DIR__ . '/../..' . '/database/seeders/ConnectRelationshipsSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\DepartmentSeeder' => __DIR__ . '/../..' . '/database/seeders/DepartmentSeeder.php',
         'Database\\Seeders\\GeneralStatusesSeeder' => __DIR__ . '/../..' . '/database/seeders/GeneralStatusesSeeder.php',
         'Database\\Seeders\\IssueStatusSeeder' => __DIR__ . '/../..' . '/database/seeders/IssueStatusSeeder.php',
+        'Database\\Seeders\\PermissionsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PermissionsTableSeeder.php',
+        'Database\\Seeders\\RolesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/RolesTableSeeder.php',
         'Database\\Seeders\\SLASeeder' => __DIR__ . '/../..' . '/database/seeders/SLASeeder.php',
         'Database\\Seeders\\SectionSeeder' => __DIR__ . '/../..' . '/database/seeders/SectionSeeder.php',
         'Database\\Seeders\\StaffSeeder' => __DIR__ . '/../..' . '/database/seeders/StaffSeeder.php',
         'Database\\Seeders\\TeamSeeder' => __DIR__ . '/../..' . '/database/seeders/TeamSeeder.php',
+        'Database\\Seeders\\TicketAttachmentSeeder' => __DIR__ . '/../..' . '/database/seeders/TicketAttachmentSeeder.php',
         'Database\\Seeders\\TicketSeeder' => __DIR__ . '/../..' . '/database/seeders/TicketSeeder.php',
         'Database\\Seeders\\TicketSourceSeeder' => __DIR__ . '/../..' . '/database/seeders/TicketSourceSeeder.php',
+        'Database\\Seeders\\UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeders/UsersTableSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5305,6 +5325,10 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Seedster\\ArtisanServiceProvider' => __DIR__ . '/..' . '/eklundkristoffer/seedster/src/ArtisanServiceProvider.php',
+        'Seedster\\Commands\\SeedCommand' => __DIR__ . '/..' . '/eklundkristoffer/seedster/src/Commands/SeedCommand.php',
+        'Seedster\\Handlers\\SeedHandler' => __DIR__ . '/..' . '/eklundkristoffer/seedster/src/Handlers/SeedHandler.php',
+        'Seedster\\SeedsterServiceProvider' => __DIR__ . '/..' . '/eklundkristoffer/seedster/src/SeedsterServiceProvider.php',
         'Spatie\\Backtrace\\Backtrace' => __DIR__ . '/..' . '/spatie/backtrace/src/Backtrace.php',
         'Spatie\\Backtrace\\CodeSnippet' => __DIR__ . '/..' . '/spatie/backtrace/src/CodeSnippet.php',
         'Spatie\\Backtrace\\File' => __DIR__ . '/..' . '/spatie/backtrace/src/File.php',
@@ -6356,6 +6380,42 @@ class ComposerStaticInit4310790c68e535c6465e0f97ecc6ff5a
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'jeremykenedy\\LaravelRoles\\App\\Exceptions\\AccessDeniedException' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Exceptions/AccessDeniedException.php',
+        'jeremykenedy\\LaravelRoles\\App\\Exceptions\\LevelDeniedException' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Exceptions/LevelDeniedException.php',
+        'jeremykenedy\\LaravelRoles\\App\\Exceptions\\PermissionDeniedException' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Exceptions/PermissionDeniedException.php',
+        'jeremykenedy\\LaravelRoles\\App\\Exceptions\\RoleDeniedException' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Exceptions/RoleDeniedException.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Controllers\\Api\\LaravelRolesApiController' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Controllers/Api/LaravelRolesApiController.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Controllers\\LaravelPermissionsController' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Controllers/LaravelPermissionsController.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Controllers\\LaravelRolesController' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Controllers/LaravelRolesController.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Controllers\\LaravelRolesDeletedController' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Controllers/LaravelRolesDeletedController.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Controllers\\LaravelpermissionsDeletedController' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Controllers/LaravelpermissionsDeletedController.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Middleware\\VerifyLevel' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Middleware/VerifyLevel.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Middleware\\VerifyPermission' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Middleware/VerifyPermission.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Middleware\\VerifyRole' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Middleware/VerifyRole.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Requests\\StorePermissionRequest' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Requests/StorePermissionRequest.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Requests\\StoreRoleRequest' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Requests/StoreRoleRequest.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Requests\\UpdatePermissionRequest' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Requests/UpdatePermissionRequest.php',
+        'jeremykenedy\\LaravelRoles\\App\\Http\\Requests\\UpdateRoleRequest' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Http/Requests/UpdateRoleRequest.php',
+        'jeremykenedy\\LaravelRoles\\App\\Services\\PermissionFormFields' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Services/PermissionFormFields.php',
+        'jeremykenedy\\LaravelRoles\\App\\Services\\RoleFormFields' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/App/Services/RoleFormFields.php',
+        'jeremykenedy\\LaravelRoles\\Contracts\\HasRoleAndPermission' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Contracts/HasRoleAndPermission.php',
+        'jeremykenedy\\LaravelRoles\\Contracts\\PermissionHasRelations' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Contracts/PermissionHasRelations.php',
+        'jeremykenedy\\LaravelRoles\\Contracts\\RoleHasRelations' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Contracts/RoleHasRelations.php',
+        'jeremykenedy\\LaravelRoles\\Database\\Database' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Database/Database.php',
+        'jeremykenedy\\LaravelRoles\\Database\\Seeders\\DefaultConnectRelationshipsSeeder' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Database/Seeders/DefaultConnectRelationshipsSeeder.php',
+        'jeremykenedy\\LaravelRoles\\Database\\Seeders\\DefaultPermissionsTableSeeder' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Database/Seeders/DefaultPermissionsTableSeeder.php',
+        'jeremykenedy\\LaravelRoles\\Database\\Seeders\\DefaultRolesTableSeeder' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Database/Seeders/DefaultRolesTableSeeder.php',
+        'jeremykenedy\\LaravelRoles\\Database\\Seeders\\DefaultUsersTableSeeder' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Database/Seeders/DefaultUsersTableSeeder.php',
+        'jeremykenedy\\LaravelRoles\\Models\\Permission' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Models/Permission.php',
+        'jeremykenedy\\LaravelRoles\\Models\\Role' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Models/Role.php',
+        'jeremykenedy\\LaravelRoles\\RolesFacade' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/RolesFacade.php',
+        'jeremykenedy\\LaravelRoles\\RolesServiceProvider' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/RolesServiceProvider.php',
+        'jeremykenedy\\LaravelRoles\\Traits\\HasRoleAndPermission' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Traits/HasRoleAndPermission.php',
+        'jeremykenedy\\LaravelRoles\\Traits\\PermissionHasRelations' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Traits/PermissionHasRelations.php',
+        'jeremykenedy\\LaravelRoles\\Traits\\RoleHasRelations' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Traits/RoleHasRelations.php',
+        'jeremykenedy\\LaravelRoles\\Traits\\RolesAndPermissionsHelpersTrait' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Traits/RolesAndPermissionsHelpersTrait.php',
+        'jeremykenedy\\LaravelRoles\\Traits\\RolesUsageAuthTrait' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Traits/RolesUsageAuthTrait.php',
+        'jeremykenedy\\LaravelRoles\\Traits\\Slugable' => __DIR__ . '/..' . '/jeremykenedy/laravel-roles/src/Traits/Slugable.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 
